@@ -42,6 +42,7 @@ def gpon_sn_converter(sn: str | bytes, encoding: str = 'utf-8', strict: bool = F
 
 
 def main():
+    #TODO добавить обработку списка SN из файла
     parser = argparse.ArgumentParser(description="GPON Serial Number Converter (ASCII <-> HEX)")
     parser.add_argument("sn", type=str, help="Serial number in ASCII or HEX format")
     parser.add_argument("-e", "--encoding", default="utf-8", help="Encoding to use (default: utf-8)")
